@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(135deg, #1abc9c 0%, #ff6b6b 100%); 
     margin: 0;
     padding: 20px;
     display: flex;
@@ -16,7 +16,7 @@ body {
     background-color: rgba(255, 255, 255, 0.85); 
     backdrop-filter: blur(10px);
     border-radius: 16px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(137, 85, 224, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 30px;
     box-sizing: border-box;
@@ -28,17 +28,11 @@ header {
 }
 
 h1 {
-    /* Se usa la sintaxis estándar para el gradiente */
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    
-    /* Propiedad estándar y prefijo para máxima compatibilidad */
+    background: linear-gradient(45deg, #e91e63, #9c27b0);
     -webkit-background-clip: text;
     background-clip: text;
-    
-    /* El color del texto se hace transparente para mostrar el fondo */
     color: transparent;
-    -webkit-text-fill-color: transparent; /* Específico para algunos navegadores */
-    
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 2.5em;
     margin: 0;
@@ -62,13 +56,13 @@ h1 {
 
 #task-input:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(106, 17, 203, 0.2);
+    box-shadow: 0 0 0 4px rgba(156, 39, 176, 0.2);
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 .add-btn {
     padding: 12px 20px;
-    background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    background: linear-gradient(45deg, #e91e63 0%, #9c27b0 100%);
     color: white;
     border: none;
     border-radius: 12px;
@@ -113,7 +107,7 @@ li::before {
     left: 15px;
     height: 20px;
     width: 20px;
-    border: 2px solid #6a11cb;
+    border: 2px solid #9c27b0; 
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -125,8 +119,8 @@ li.completed {
 }
 
 li.completed::before {
-    background-color: #6a11cb;
-    border-color: #6a11cb;
+    background-color: #9c27b0; 
+    border-color: #9c27b0;
 }
 
 li.completed::after {
